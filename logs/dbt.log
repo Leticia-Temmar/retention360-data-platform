@@ -1,0 +1,104 @@
+[0m11:06:43.593259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb857f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d273610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d273890>]}
+
+
+============================== 11:06:43.600145 | 8846c4ca-c9ce-4467-a4f5-b6e764b3ff6a ==============================
+[0m11:06:43.600145 [info ] [MainThread]: Running with dbt=1.11.10
+[0m11:06:43.600827 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'debug': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/leticiaboudjemai/.dbt', 'invocation_command': 'dbt init retention360_dbt', 'printer_width': '80', 'warn_error': 'None', 'log_path': 'logs', 'cache_selected_only': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'empty': 'None', 'target_path': 'None'}
+[0m11:06:43.623704 [info ] [MainThread]: Creating dbt configuration folder at /Users/leticiaboudjemai/.dbt
+[0m11:06:43.626021 [debug] [MainThread]: Starter project path: /Users/leticiaboudjemai/retention360-data-platform/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m11:06:43.634437 [info ] [MainThread]: 
+Your new dbt project "retention360_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:06:43.635060 [info ] [MainThread]: Setting up your profile.
+[0m11:07:38.812510 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:07:38.813586 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:07:38.814179 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:35:40.087879 [info ] [MainThread]: Profile retention360_dbt written to /Users/leticiaboudjemai/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:35:40.157830 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 1736.6512, "process_in_blocks": "0", "process_kernel_time": 0.855058, "process_mem_max_rss": "185577472", "process_out_blocks": "0", "process_user_time": 3.246241}
+[0m11:35:40.181836 [debug] [MainThread]: Command `dbt init` succeeded at 11:35:40.181400 after 1736.68 seconds
+[0m11:35:40.183758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c255b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0ee7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c01040>]}
+[0m11:35:40.187073 [debug] [MainThread]: Flushing usage events
+[0m11:35:40.725507 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:36:29.924360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095f17f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad1f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad1f890>]}
+
+
+============================== 11:36:29.931912 | 28a2969b-565f-4c50-a34d-2156e7e87e60 ==============================
+[0m11:36:29.931912 [info ] [MainThread]: Running with dbt=1.11.10
+[0m11:36:29.932810 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'warn_error': 'None', 'log_format': 'default', 'static_parser': 'True', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True', 'empty': 'None', 'profiles_dir': '/Users/leticiaboudjemai/.dbt', 'invocation_command': 'dbt debug', 'log_cache_events': 'False', 'no_print': 'None', 'version_check': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True'}
+[0m11:36:29.961748 [info ] [MainThread]: dbt version: 1.11.10
+[0m11:36:29.962228 [info ] [MainThread]: python version: 3.13.5
+[0m11:36:29.962593 [info ] [MainThread]: python path: /Users/leticiaboudjemai/retention360-data-platform/.venv/bin/python3.13
+[0m11:36:29.962950 [info ] [MainThread]: os info: macOS-15.7.3-x86_64-i386-64bit-Mach-O
+[0m11:36:32.203219 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:36:32.204081 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:36:32.204651 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:36:32.305556 [info ] [MainThread]: Using profiles dir at /Users/leticiaboudjemai/.dbt
+[0m11:36:32.306024 [info ] [MainThread]: Using profiles.yml file at /Users/leticiaboudjemai/.dbt/profiles.yml
+[0m11:36:32.306430 [info ] [MainThread]: Using dbt_project.yml file at /Users/leticiaboudjemai/retention360-data-platform/dbt_project.yml
+[0m11:36:32.307924 [info ] [MainThread]: adapter type: snowflake
+[0m11:36:32.308482 [info ] [MainThread]: adapter version: 1.11.5
+[0m11:36:32.308983 [info ] [MainThread]: Configuration:
+[0m11:36:32.309327 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:36:32.309703 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:36:32.310084 [info ] [MainThread]: Required dependencies:
+[0m11:36:32.310591 [debug] [MainThread]: Executing "git --help"
+[0m11:36:32.366589 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:36:32.368262 [debug] [MainThread]: STDERR: "b''"
+[0m11:36:32.369052 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:36:32.369606 [info ] [MainThread]: Connection:
+[0m11:36:32.370180 [info ] [MainThread]:   account: FDOKHPK-FZ24267
+[0m11:36:32.370655 [info ] [MainThread]:   user: Leticia
+[0m11:36:32.371117 [info ] [MainThread]:   database: RETENTION360_DB
+[0m11:36:32.371571 [info ] [MainThread]:   warehouse: RETENTION360_WH
+[0m11:36:32.372018 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m11:36:32.372499 [info ] [MainThread]:   schema: CURATED
+[0m11:36:32.372952 [info ] [MainThread]:   authenticator: None
+[0m11:36:32.373414 [info ] [MainThread]:   oauth_client_id: None
+[0m11:36:32.373864 [info ] [MainThread]:   query_tag: None
+[0m11:36:32.374319 [info ] [MainThread]:   client_session_keep_alive: False
+[0m11:36:32.374989 [info ] [MainThread]:   host: None
+[0m11:36:32.375552 [info ] [MainThread]:   port: None
+[0m11:36:32.375988 [info ] [MainThread]:   proxy_host: None
+[0m11:36:32.376386 [info ] [MainThread]:   proxy_port: None
+[0m11:36:32.376776 [info ] [MainThread]:   protocol: None
+[0m11:36:32.377164 [info ] [MainThread]:   connect_retries: 1
+[0m11:36:32.377547 [info ] [MainThread]:   connect_timeout: None
+[0m11:36:32.378065 [info ] [MainThread]:   retry_on_database_errors: False
+[0m11:36:32.378519 [info ] [MainThread]:   retry_all: False
+[0m11:36:32.378906 [info ] [MainThread]:   insecure_mode: False
+[0m11:36:32.379288 [info ] [MainThread]:   reuse_connections: True
+[0m11:36:32.379718 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m11:36:32.380131 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m11:36:32.381091 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m11:36:32.545267 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:36:32.601382 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:36:32.601833 [debug] [MainThread]: On debug: select 1 as id
+[0m11:36:32.602183 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:36:34.165495 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.563 seconds
+[0m11:36:34.168343 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:36:34.169305 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:36:34.170072 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/leticiaboudjemai/retention360-data-platform/dbt_project.yml> not found
+
+[0m11:36:34.179739 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.3582034, "process_in_blocks": "0", "process_kernel_time": 0.926134, "process_mem_max_rss": "205348864", "process_out_blocks": "0", "process_user_time": 4.027479}
+[0m11:36:34.180893 [debug] [MainThread]: Command `dbt debug` failed at 11:36:34.180629 after 4.36 seconds
+[0m11:36:34.181664 [debug] [MainThread]: Connection 'debug' was left open.
+[0m11:36:34.182534 [debug] [MainThread]: On debug: Close
+[0m11:36:34.243581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ae95b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ba0830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116625d00>]}
+[0m11:36:34.244699 [debug] [MainThread]: Flushing usage events
+[0m11:36:34.619174 [debug] [MainThread]: An error was encountered while trying to flush usage events
