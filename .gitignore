@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Data files
+data/raw/
+data/processed/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# macOS
+.DS_Store
