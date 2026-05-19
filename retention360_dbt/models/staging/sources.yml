@@ -1,0 +1,161 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETENTION360_DB
+    schema: RAW
+
+    tables:
+      - name: raw_orders
+      - name: raw_order_items
+      - name: raw_order_payments
+      - name: raw_customers
+      - name: raw_products
+      - name: raw_sellers
+      - name: raw_order_reviews
+      - name: raw_product_category_name_translation
+
+
+models:
+  - name: stg_orders
+
+    columns:
+      - name: order_id
+        description: Unique identifier of the order
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: stg_order_items
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+
+      - name: order_item_id
+        tests:
+          - not_null
+
+      - name: product_id
+        tests:
+          - not_null
+
+      - name: seller_id
+        tests:
+          - not_null
+
+  - name: stg_order_payments
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+
+      - name: payment_sequential
+        tests:
+          - not_null
+
+      - name: payment_type
+        tests:
+          - not_null
+
+      - name: payment_value
+        tests:
+          - not_null
+
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_unique_id
+        tests:
+          - not_null
+
+      - name: customer_zip_code_prefix
+        tests:
+          - not_null
+
+      - name: customer_city
+        tests:
+          - not_null
+
+      - name: customer_state
+        tests:
+          - not_null
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+      - name: product_category_name
+
+      - name: product_name_length
+
+      - name: product_description_length
+
+      - name: product_photos_qty
+
+      - name: product_weight_g
+
+      - name: product_length_cm
+
+      - name: product_height_cm
+
+      - name: product_width_cm
+
+  - name: stg_sellers
+
+    columns:
+      - name: seller_id
+        tests:
+          - unique
+          - not_null
+
+      - name: seller_zip_code_prefix
+        tests:
+          - not_null
+
+      - name: seller_city
+        tests:
+          - not_null
+
+      - name: seller_state
+        tests:
+          - not_null
+  - name: stg_order_reviews
+
+    columns:
+      - name: review_id
+        tests:
+          - not_null
+
+      - name: order_id
+        tests:
+          - not_null
+
+      - name: review_score
+
+      - name: review_creation_datetime
+
+      - name: review_answer_datetime
+
+  - name: stg_product_category_translation
+
+    columns:
+      - name: product_category_name
+        tests:
+          - unique
+          - not_null
+
+      - name: product_category_name_english
+        tests:
+          - not_null
