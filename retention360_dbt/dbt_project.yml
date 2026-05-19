@@ -38,5 +38,5 @@ models:
       +materialized: table
 
     marts:
-      +schema: MARTS
+      +schema: MART
       +materialized: table
