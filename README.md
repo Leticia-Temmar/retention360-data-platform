@@ -115,3 +115,19 @@ Deliver business insights through interactive dashboards.
 <p align="center">
   <img src="images/Overview.png" width="1100">
 </p>
+
+## 5. Data Warehouse Implementation
+
+This project uses Snowflake as the central data warehouse following a medallion architecture.
+
+### Structure
+
+<p align="center">
+  <img src="images/snowflake_architecture.png" width="1100">
+</p>
+
+### Data Layers
+
+- **RAW** → Stores original source data loaded from AWS S3
+- **CURATED** → Cleansed and transformed business datasets
+- **MART** → Analytics-ready datasets optimized for reporting
