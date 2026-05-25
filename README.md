@@ -125,7 +125,7 @@ This project uses Snowflake as the central data warehouse following a medallion 
 ### Structure
 
 <p align="center">
-  <img src="images/snowflake_architecture.png" width="1100">
+  <img src="images/snowflake_architecture.png" width="300">
 </p>
 
 ### Data Layers
