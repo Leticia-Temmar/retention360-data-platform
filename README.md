@@ -116,6 +116,8 @@ Deliver business insights through interactive dashboards.
   <img src="images/Overview.png" width="1100">
 </p>
 
+---
+
 ## 5. Data Warehouse Implementation
 
 This project uses Snowflake as the central data warehouse following a medallion architecture.
