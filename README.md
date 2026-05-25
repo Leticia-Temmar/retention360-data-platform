@@ -113,5 +113,5 @@ Deliver business insights through interactive dashboards.
 ## 4. Pipeline Overview
 
 <p align="center">
-  <img src="images/overview.png" width="1100">
+  <img src="images/Overview.png" width="1100">
 </p>
